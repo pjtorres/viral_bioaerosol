@@ -28,15 +28,15 @@ for line in fin1:
     handle = Entrez.efetch(db="nucleotide", id=str(line), rettype="gb", retmode="text")
     x = SeqIO.read(handle, 'genbank')# get information regarding your accesion number in here will be taxonomy
     tax=x.annotations['taxonomy']# only get taxonomy
-    print ("tax")
-    print (tax)
+    #print ("tax")
+    #print (tax)
     taxf=";".join(tax)#join taxonomy based on ';' character
-    print ("taxf")
-    print (taxf)
+    #print ("taxf")
+    #print (taxf)
     full_lineage=(taxf+';'+x.annotations['organism']) # but i also want the organism name so this will also add organism specific name
     line=line.strip()
-    print ("line")
-    print (line)
+    #print ("line")
+    #print (line)
     lineage_info[line]=full_lineage
 print("You have "+ str(len(lineage_info))+' accesion numbers')   
 
