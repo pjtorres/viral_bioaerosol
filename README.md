@@ -12,5 +12,9 @@ headers should include nucleotide Accesion number followed by full taxonomic lin
 
 # blastn script
 ```bash
-~/ncbi-blast-2.6.0+/bin/blastn -query File1.fasta -outfmt "6 stitle" -out File1.blastn.txt -db viral -dust no -max_target_seqs 1 -perc_identity 90 -evalue 0.0001 -min_raw_gapped_score 105
+ncbi-blast-2.6.0+/bin/blastn \
+  -query File1.fasta \
+  -outfmt "6 stitle" -out File1.blastn.txt \
+  -db viral -dust no \
+  -max_target_seqs 1 -perc_identity 90 -evalue 0.0001 -min_raw_gapped_score 105
 ```
