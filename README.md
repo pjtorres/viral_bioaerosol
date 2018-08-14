@@ -1,3 +1,11 @@
+# Deconseq script for removal of potential Human Contamination
+ ```perl 
+ perl deconseq-standalone-0.4.3/bwasw_modified_source/deconseq.pl \
+    -f file.fq \
+    -dbs hs_ref_GRCh37_p7 \
+    -dbs_retain virus -out_dir deconseq/ \
+    -id $FILE -i 90 -c 95 -group 1
+ ```
 # xtract_forward
 
 xtract_forward allows you to extract your unmmerged high quality R1 reads.
