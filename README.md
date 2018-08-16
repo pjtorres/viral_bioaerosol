@@ -13,6 +13,14 @@ ILLUMINACLIP:TruSeq3-PE-2.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MIN
     -dbs_retain virus -out_dir deconseq/ \
     -id $FILE -i 90 -c 95 -group 1
  ```
+ 
+# BBmerge - meerge paired end reads
+```bash
+~/bbmap/bbmerge.sh 
+in1=$FILEF \ 
+in2=$FILER out=${FILEO%}_merged.fa \
+outu=${FILEO%}_unmereged.fa hist=${FILEO%}_histogram.txt
+```
 # xtract_forward
 
 xtract_forward allows you to extract your unmmerged high quality R1 reads.
