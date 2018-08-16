@@ -1,3 +1,10 @@
+#Trimmomatic command
+```java
+java -jar ~/Trimmomatic-0.36/trimmomatic-0.36.jar PE $FILEF $FILER paired_output_${FILEF%} \
+unpaired_output_${FILEF%} paired_output_${FILER%} unpaired_output_${FILER%} -trimlog output.log \
+ILLUMINACLIP:TruSeq3-PE-2.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+```
+
 # Deconseq script for removal of potential Human Contamination
  ```perl 
  perl deconseq-standalone-0.4.3/bwasw_modified_source/deconseq.pl \
