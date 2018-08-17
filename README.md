@@ -23,7 +23,7 @@ perl ~/prinseq-lite-0.20.4/prinseq-lite.pl -verbose -derep 1245 -lc_method entro
  ```
 # fastq-pair Match up paired end fastq files quickly and efficiently - [Edwards lab](https://github.com/linsalrob/fastq-pair)
 ```bash
-fastq_pair $FILEF.fastq $FILER2.fastq
+fastq_pair $FILEF.fastq $FILER.fastq
 ```
 
 # BBmerge - meerge paired end reads
