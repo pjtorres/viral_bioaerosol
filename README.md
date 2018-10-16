@@ -4,7 +4,7 @@ java -jar ~/Trimmomatic-0.36/trimmomatic-0.36.jar PE $FILEF $FILER paired_output
 unpaired_output_${FILEF%} paired_output_${FILER%} unpaired_output_${FILER%} -trimlog output.log \
 ILLUMINACLIP:TruSeq3-PE-2.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
 ```
-# Prinseq script - used to quality control and data processing
+# Prinseq script - used for quality control and data processing
 ```perl
 perl ~/prinseq-lite-0.20.4/prinseq-lite.pl -verbose -derep 1245 -lc_method entropy \
 -lc_threshold 50 -trim_qual_right 20 -trim_qual_left 20 -trim_qual_type mean \
@@ -26,7 +26,7 @@ perl ~/prinseq-lite-0.20.4/prinseq-lite.pl -verbose -derep 1245 -lc_method entro
 fastq_pair $FILEF.fastq $FILER.fastq
 ```
 
-# BBmerge - meerge paired end reads
+# BBmerge - merge paired end reads
 ```bash
 ~/bbmap/bbmerge.sh 
 in1=$FILEF \ 
