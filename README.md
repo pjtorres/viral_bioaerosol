@@ -7,6 +7,7 @@
 - [deconseq](http://deconseq.sourceforge.net/)
 - [bbmerge](https://jgi.doe.gov/data-and-tools/bbtools/bb-tools-user-guide/bbmerge-guide/)
 - [blastn](https://www.ncbi.nlm.nih.gov/books/NBK279680/)
+- [fastq-pair](https://github.com/linsalrob/fastq-pair)
 
 # Trimmomatic command -  remove sequence adaptors
 
@@ -34,7 +35,7 @@ perl ~/prinseq-lite-0.20.4/prinseq-lite.pl -verbose -derep 1245 -lc_method entro
     -dbs_retain virus -out_dir deconseq/ \
     -id $FILE -i 90 -c 95 -group 1
  ```
-# fastq-pair Match up paired end fastq files quickly and efficiently - [Edwards lab](https://github.com/linsalrob/fastq-pair)
+# fastq-pair Match up paired end fastq files quickly and efficiently 
 
 ```bash
 fastq_pair $FILEF.fastq $FILER.fastq
@@ -65,7 +66,7 @@ sed 's/\s.*$//' subset_viral_genomic.fna | grep ">" | sed 's/>//' | awk '{print 
 Script allows you to change the headers of fna files downloaded and concatenated from NCBI ref seq. After this script
 headers should include nucleotide Accession number followed by full taxonomic lineage
 
- `python get_taxlineage_fna.py --acc test/subset_viral_accesion.txt --input test/subset_viral_genomic.fna --output  test/viral_subset.genomic.new.header.fna`
+ ```python get_taxlineage_fna.py --acc test/subset_viral_accesion.txt --input test/subset_viral_genomic.fna --output  test/viral_subset.genomic.new.header.fna```
 
 # blastn script
 
