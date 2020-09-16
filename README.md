@@ -1,12 +1,12 @@
-Must have the following for analysis
+#Must have the following for analysis
 
-python 3 or greater
-[Biopython](https://biopython.org/)
-[trimmomatic](http://www.usadellab.org/cms/?page=trimmomatic)
-[prinseq](http://prinseq.sourceforge.net/)
-[deconseq](http://deconseq.sourceforge.net/)
-[bbmerge](https://jgi.doe.gov/data-and-tools/bbtools/bb-tools-user-guide/bbmerge-guide/)
-[blastn](https://www.ncbi.nlm.nih.gov/books/NBK279680/)
+- python 3 or greater
+- [Biopython](https://biopython.org/)
+- [trimmomatic](http://www.usadellab.org/cms/?page=trimmomatic)
+- [prinseq](http://prinseq.sourceforge.net/)
+- [deconseq](http://deconseq.sourceforge.net/)
+- [bbmerge](https://jgi.doe.gov/data-and-tools/bbtools/bb-tools-user-guide/bbmerge-guide/)
+- [blastn](https://www.ncbi.nlm.nih.gov/books/NBK279680/)
 
 # Trimmomatic command-  remove sequence adaptors
 ```java
