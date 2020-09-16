@@ -66,7 +66,8 @@ sed 's/\s.*$//' subset_viral_genomic.fna | grep ">" | sed 's/>//' | awk '{print 
 Script allows you to change the headers of fna files downloaded and concatenated from NCBI ref seq. After this script
 headers should include nucleotide Accession number followed by full taxonomic lineage
 
- ```python get_taxlineage_fna.py --acc test/subset_viral_accesion.txt --input test/subset_viral_genomic.fna --output  test/viral_subset.genomic.new.header.fna```
+ ```python 
+ python get_taxlineage_fna.py --acc test/subset_viral_accesion.txt --input test/subset_viral_genomic.fna --output  test/viral_subset.genomic.new.header.fna```
 
 # blastn script
 
