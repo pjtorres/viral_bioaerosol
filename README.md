@@ -58,9 +58,9 @@ After merging your paired end reads programs typically give you 1 R1 and R2 merg
 # get_tax_lineage
 Will need a file that only contains the accession numbers in your fna file. Below is an example of how you can get that from your fna file:
 
-`bash
+```bash
 sed 's/\s.*$//' subset_viral_genomic.fna | grep ">" | sed 's/>//' | awk '{print $1}' > subset_viral_accesion.txt
-`
+```
 
 Script allows you to change the headers of fna files downloaded and concatenated from NCBI ref seq. After this script
 headers should include nucleotide Accession number followed by full taxonomic lineage
