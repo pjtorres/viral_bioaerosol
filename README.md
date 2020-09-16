@@ -67,7 +67,7 @@ Script allows you to change the headers of fna files downloaded and concatenated
 headers should include nucleotide Accession number followed by full taxonomic lineage
 
  ```python 
- python get_taxlineage_fna.py --acc test/subset_viral_accesion.txt --input test/subset_viral_genomic.fna --output  test/viral_subset.genomic.new.header.fna
+ python get_taxlineage_fna.py --acc test/subset_viral_accesion.txt --input test/subset_viral_genomic.fna --output test/viral_subset.genomic.new.header.fna
  ```
 
 # blastn script
