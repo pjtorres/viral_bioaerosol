@@ -1,4 +1,4 @@
-# Notes on the bioinformatics pipeline used in [Seasonal dynamics of DNA and RNA viral bioaerosol communities in a daycare center](https://link.springer.com/content/pdf/10.1186/s40168-019-0672-z.pdf)
+# [Seasonal dynamics of DNA and RNA viral bioaerosol communities in a daycare center](https://link.springer.com/content/pdf/10.1186/s40168-019-0672-z.pdf)
 
 # Must have the following for analysis
 
