@@ -35,7 +35,7 @@ perl ~/prinseq-lite-0.20.4/prinseq-lite.pl -verbose -derep 1245 -lc_method entro
     -dbs_retain virus -out_dir deconseq/ \
     -id $FILE -i 90 -c 95 -group 1
  ```
-# fastq-pair Match up paired end fastq files quickly and efficiently 
+# fastq-pair - match up paired end fastq files quickly and efficiently 
 
 ```bash
 fastq_pair $FILEF.fastq $FILER.fastq
@@ -49,14 +49,14 @@ in1=$FILEF \
 in2=$FILER out=${FILEO%}_merged.fa \
 outu=${FILEO%}_unmereged.fa hist=${FILEO%}_histogram.txt
 ```
-# xtract_forward
+# xtract forward
 
 xtract_forward allows you to extract your unmerged high quality R1 reads.
 
 After merging your paired end reads programs typically give you 1 R1 and R2 merged file and 1 file that contained all your R1 an R2 reads that did not merge. If doing a simple classification (e.g., Blast) you could end up throwing away useful R1 data from your analysis. xtract-forward allows you to extract all your R1 reads from your unmerged file so you can then concatenate it with your R1/R2 merged file.
 
 
-# get_tax_lineage
+# get viral lineage
 Will need a file that only contains the accession numbers in your fna file. Below is an example of how you can get that from your fna file:
 
 ```bash
